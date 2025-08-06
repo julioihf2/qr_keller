@@ -187,7 +187,7 @@
         return;
       }
 
-      const texto = bodega + ";" + codigo + ";" + sn + ";" + marca + ";" + modelo;
+      const texto = bodega + "," + codigo + "," + sn + "," + marca + "," + modelo;
       const qr = new QRious({
         element: document.getElementById("qrCanvas") || crearCanvas(),
         value: texto,
@@ -237,5 +237,5 @@
     }
   </script>
 </body>
-Rev0.1 JHF 06-08-2025
+Rev0.2 JHF 06-08-2025
 </html>
